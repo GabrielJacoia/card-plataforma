@@ -1,0 +1,25 @@
+@media(max-width:770px){
+    .img-fundo{
+        width:100%
+    }
+
+    .card{
+        margin-top: 25%;
+        max-width:50%;
+    }
+}
+
+@media(max-width:420px){
+    .card{
+        max-width:80%;
+    }
+}
+
+@media(max-width:360px){
+    .card{
+        max-width: 90%;
+    }
+    .info-plano .plan-anual{
+        padding-left: 15px;
+    }
+}

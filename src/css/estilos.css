@@ -1,0 +1,115 @@
+:root{
+    --cor-primaria:hsl(225, 100%, 94%);
+    --cor-secundaria:hsl(245, 75%, 52%);
+    --cor-terciaria:hsl(225, 100%, 98%);
+    --cor-titulo:hsl(223, 47%, 23%);
+    --cor-paragrafo:hsl(224, 23%, 55%);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-primaria); 
+}
+body .img-fundo{
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cor-terciaria);
+    border-radius: 10px;
+    margin-top: 30px;
+    max-width: 25%;
+    
+}
+
+.card .img-card{
+    width:100%;
+    border-radius:10px 10px 0 0;
+}
+
+.card .informacoes{
+    text-align: center;
+    padding:25px 0; 
+}
+.card .informacoes h1{
+    color: var(--cor-titulo);
+}
+
+.card .informacoes p{
+    margin-top: 15px;
+    font-size: 1rem;
+    color: var(--cor-paragrafo);
+}
+
+.card .info-plano{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:var(--cor-terciaria);
+    width: 80%;
+    padding: 10px 0;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+
+.info-plano .plan-anual{
+    margin-right: 60px;
+    
+}
+
+.info-plano .plan-anual h2{
+    font-size: 1rem;
+    color: var(--cor-titulo);
+}
+
+.info-plano .plan-anual span{
+    color:var(--cor-paragrafo)
+}
+
+.info-plano .botao-change{
+    color: var(--cor-secundaria);
+    transition: 0.5;
+}
+
+.info-plano .botao-change:hover{
+    color: #000000;
+    text-decoration: none;
+}
+
+.botao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.botao .processo{
+    margin-bottom: 25px;
+    padding: 10px 70px;
+    background-color: var(--cor-secundaria);
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.botao .cancel{
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--cor-paragrafo);
+}
+
+.botao .cancel:hover{
+    color:#000000
+}
+
+
+
